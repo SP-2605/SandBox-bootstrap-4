@@ -21,7 +21,7 @@
             <button class="btn btn-primary btn-block dropdown-toggle" type="button" data-toggle="dropdown">
               2: Utilities
             </button>
-            <div class="dropdown-menu">
+            <div class="dropdown-menu" style="width: 100%;">
               <a class="dropdown-item" href="2_2_basic_typography.html">2.2 Basic Typography</a>
               <a class="dropdown-item" href="2_3_text_alignment_display.html">2.3 Text Alignment & Display</a>
               <a class="dropdown-item" href="2_4_floats_position.html">2.4 Floats & Position</a>
@@ -37,7 +37,7 @@
             <button class="btn btn-success btn-block dropdown-toggle" type="button" data-toggle="dropdown">
               3: CSS Components
             </button>
-            <div class="dropdown-menu">
+            <div class="dropdown-menu" style="width: 100%;">
               <a class="dropdown-item" href="3_2_buttons.html">3.2 Buttons</a>
               <a class="dropdown-item" href="3_3_navbar.html">3.3 Navbar</a>
               <a class="dropdown-item" href="3_4_list_groups_badges.html">3.4 List Groups & Badges</a>
@@ -56,7 +56,7 @@
             <button class="btn btn-warning btn-block dropdown-toggle" type="button" data-toggle="dropdown">
               4: Grid & Flexbox
             </button>
-            <div class="dropdown-menu">
+            <div class="dropdown-menu" style="width: 100%;">
               <a class="dropdown-item" href="4_2_grid_system.html">4.2 Grid System</a>
               <a class="dropdown-item" href="4_3_grid_alignment.html">4.3 Grid Alignment</a>
               <a class="dropdown-item" href="4_4_flexbox.html">4.4 Flexbox</a>
@@ -69,7 +69,7 @@
             <button class="btn btn-danger btn-block dropdown-toggle" type="button" data-toggle="dropdown">
               5: JavaScript Widgets
             </button>
-            <div class="dropdown-menu">
+            <div class="dropdown-menu" style="width: 100%;">
               <a class="dropdown-item" href="5_2_carousel.html">5.2 Carousel</a>
               <a class="dropdown-item" href="5_3_collapse.html">5.3 Collapse</a>
               <a class="dropdown-item" href="5_4_tooltips.html">5.4 Tooltips</a>
@@ -88,17 +88,17 @@
     <!--####################START HERE####################-->
 
     <!-- RESPONSIVE GRID -->
-    <div>
-      <div style="border:1px solid #333">
-        <ul>
+    <div class="row mb-3">
+      <div class="col-sm-6 col-md-8 col-lg-9 col-xl-10" style="border:1px solid #333">
+        <ul class="list-unstyled">
           <li>6 column on small screens</li>
           <li>8 column on medium screen</li>
           <li>9 column on large screen</li>
           <li>10 column on xlarge screen</li>
         </ul>
       </div>
-      <div style="border:1px solid #333">
-        <ul>
+      <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2" style="border:1px solid #333">
+        <ul class="list-unstyled">
           <li>6 column on small screens</li>
           <li>4 column on medium screen</li>
           <li>3 column on large screen</li>
@@ -108,75 +108,78 @@
     </div>
 
     <!-- EQUAL WIDTH -->
-    <div>
-      <div style="border:1px solid #333">Equal Width</div>
-      <div style="border:1px solid #333">Equal Width</div>
-      <div style="border:1px solid #333">Equal Width</div>
-      <div style="border:1px solid #333">Equal Width</div>
+    <div class="row mb-3">
+      <div class="col" style="border:1px solid #333">Equal Width</div>
+      <div class="col" style="border:1px solid #333">Equal Width</div>
+      <div class="col" style="border:1px solid #333">Equal Width</div>
+      <div class="col" style="border:1px solid #333">Equal Width</div>
     </div>
 
     <!-- EQUAL WIDTH MULTI ROW -->
-    <div>
-      <div style="border:1px solid #333">Equal Width Multi</div>
-      <div style="border:1px solid #333">Equal Width Multi</div>
-      <div style="border:1px solid #333"></div>
-      <div style="border:1px solid #333">Equal Width Multi</div>
-      <div style="border:1px solid #333">Equal Width Multi</div>
+    <div class="row mb-3">
+      <div class="col" style="border:1px solid #333">Equal Width Multi</div>
+      <div class="col" style="border:1px solid #333">Equal Width Multi</div>
+
+      <div class="w-100" style="border:1px solid #333"></div>
+
+      <div class="col" style="border:1px solid #333">Equal Width Multi</div>
+      <div class="col" style="border:1px solid #333">Equal Width Multi</div>
     </div>
 
     <!-- AUTO LAYOUT -->
-    <div>
-      <div style="border:1px solid #333">Auto Layout</div>
-      <div style="border:1px solid #333">Auto Layout</div>
-      <div style="border:1px solid #333">Auto Layout</div>
+    <div class="row mb-3">
+      <div class="col" style="border:1px solid #333">Auto Layout</div>
+      <div class="col-md-6" style="border:1px solid #333">Auto Layout</div>
+      <div class="col-md-4" style="border:1px solid #333">Auto Layout</div>
     </div>
 
     <!-- EQUAL WIDTH STACKED -->
-    <div>
-      <div style="border:1px solid #333">Equal Width Stack</div>
-      <div style="border:1px solid #333">Equal Width Stack</div>
-      <div style="border:1px solid #333">Equal Width Stack</div>
+    <div class="row mb-3">
+      <div class="col-sm" style="border:1px solid #333">Equal Width Stack</div>
+      <div class="col-sm" style="border:1px solid #333">Equal Width Stack</div>
+      <div class="col-sm" style="border:1px solid #333">Equal Width Stack</div>
     </div>
 
     <!-- ORDERING -->
-    <div>
-      <div style="border:1px solid #333">
+    <div class="row mb-3">
+      <div class="col order-3" style="border:1px solid #333">
         First
       </div>
-      <div style="border:1px solid #333">
+      <div class="col order-1" style="border:1px solid #333">
         Second
       </div>
-      <div style="border:1px solid #333">
+      <div class="col order-2" style="border:1px solid #333">
         Third
       </div>
     </div>
 
     <!-- OFFSETTING -->
-    <div>
+    <div class="row mb-3">
       <!-- 6 column div offset by 3 -->
-      <div style="border:1px solid #333">.col-md-6 .offset-md-3</div>
-    </div>
-    <div>
-      <!-- 2 4 column divs, the second offset by 4 -->
-      <div style="border:1px solid #333">.col-md-4</div>
-      <div style="border:1px solid #333">.col-md-4 .offset-md-4</div>
+      <div class="col-xl-6 offset-xl-3" style="border:1px solid #333">.col-md-6 .offset-md-3</div>
     </div>
 
-    <div>
+    <div class="row mb-3">
+      <!-- 2 4 column divs, the second offset by 4 -->
+      <div class="col-xl-4" style="border:1px solid #333">.col-md-4</div>
+      <div class="col-xl-4 offset-xl-4" style="border:1px solid #333">.col-md-4 .offset-md-4</div>
+    </div>
+
+    <div class="row mb-3">
       <!-- 2 3 column divs, both offset by 3 -->
-      <div style="border:1px solid #333">.col-md-3 .offset-md-3</div>
-      <div style="border:1px solid #333">.col-md-3 .offset-md-3</div>
+      <div class="col-xl-3 offset-xl-3" style="border:1px solid #333">.col-md-3 .offset-md-3</div>
+      <div class="col-xl-3 offset-xl-3" style="border:1px solid #333">.col-md-3 .offset-md-3</div>
     </div>
 
     <!-- NESTING -->
-    <div>
-      <div style="border:1px solid blue">
+    <div class="row">
+      <div class="col-12" style="border:1px solid blue">
         Level 1: .col-sm-9
-        <div>
-          <div style="border:1px solid red">
+        <div class="row">
+          <div class="col-6" style="border:1px solid red">
             Level 2: .col-8 .col-sm-6
           </div>
-          <div style="border:1px solid red">
+          <div class="col-6" style="border:1px solid red">
             Level 2: .col-4 .col-sm-6
           </div>
         </div>
